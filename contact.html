@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Kumar Store::Contact Page</title>
+  </head>
+  <body>
+    <header class="section-navbar">
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+          </div>
+          <div class="sign_in_up">
+            <a href="#">SIGN In</a>
+            <a href="#">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">contact</a>
+            </li>
+            <li class="nav-link">
+              <a
+                href="addToCart.html"
+                class="nav-link add-to-cart-button"
+                id="cartValue"
+              >
+                <i class="fa-solid fa-cart-shopping">&nbsp;0</i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="section-contact">
+      <div class="container">
+        <h2 class="section-common--heading">contact us</h2>
+        <p class="section-common--subheading">
+          Get in touch with us. We are always here to help you.
+        </p>
+      </div>
+
+      <div class="container grid grid-two--cols">
+        <div class="contact-content">
+          <form action="mailto:knitish241@gmail.com" method="post" enctype="text/plain">
+            <div class="grid grid-two-cols mb-3">
+              <div>
+                <label for="username">full name</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  required
+                  autocomplete="off"
+                  placeholder="enter full name"
+                />
+              </div>
+
+              <div>
+                <label for="email">email address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  autocomplete="off"
+                  placeholder="xyz@gmail.com"
+                />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="subject">subject</label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                required
+                autocomplete="off"
+                placeholder="title of your message"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="message">message</label>
+              <textarea
+                name="message"
+                id="message "
+                cols="30"
+                rows="10"
+                placeholder="we are always here to help you."
+              ></textarea>
+            </div>
+
+            <div class="mt-3">
+              <button type="submit" class="btn contact-btn">
+                send message
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.681906205652!2d77.1634322116334!3d28.51921658911507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1e73dec5b7ad%3A0x8e46d56f9fd88adf!2s94%2F9%2C%20Kishangarh%20-%20Gaushala%20Marg%2C%20Kishangarh%20Village%2C%20Vasant%20Kunj%2C%20New%20Delhi%2C%20Delhi%20110070!5e0!3m2!1sen!2sin!4v1737823584027!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Start footer Section ========== -->
+    <footer class="section-footer">
+      <script src="./src/footer.js"></script>
+    </footer>
+    <!-- ========== End footer Section ========== -->
+
+    <script type="module" src="src/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Kumar Store::Product Page</title>
+  </head>
+  <body>
+    <header class="section-navbar">
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+          </div>
+          <div class="sign_in_up">
+            <a href="#">SIGN In</a>
+            <a href="#">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">contact</a>
+            </li>
+            <li class="nav-link">
+              <a href="addToCart.html" class="nav-link add-to-cart-button" id="cartValue">
+                <i class="fa-solid fa-cart-shopping">&nbsp;0</i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+   
+     <!-- ========== Start Extra Product Section ========== -->
+     <section class="section-extra-product">
+      <div class="container grid grid-three--cols">
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>New year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="">Show now</a>
+          </div>                 
+          <div class="extra-img extra-laptop">
+            <img src="./public/images/laptop.png" alt="Laptop">
+          </div>
+        </div>
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>New year sale</p>
+            <h3>40% discount on Speakesrs</h3>
+            <a href="">Show now</a>
+          </div>                 
+          <div class="extra-img">
+            <img src="./public/images/headphoneEcom.png" alt="Headphone">
+          </div>
+        </div>
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>New year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="">Show now</a>
+          </div>                 
+          <div class="extra-img">
+            <img src="./public/images/mobiles.png" alt="mobile">
+          </div>
+        </div>
+      </div>
+    </section>
+     
+     <!-- ========== End Extra Product Section ========== -->
+
+     <!-- ========== Start Policy ========== -->
+     <section class="section-policy container">
+      <div class=" grid grid-four--cols">
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div class="div-policy-text">
+            <p>worldwide shipping</p>
+            <p>order above $100</p>
+          </div>
+        </div>
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+          <div class="div-policy-text">
+            <p>Easy 30 Day Returns</p>
+            <p>Back Returns in 7 Days</p>
+          </div>
+        </div>
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <div class="div-policy-text">
+            <p>money back guarantee</p>
+            <p>guarantee with in 30-Days</p>
+          </div>
+        </div>
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div class="div-policy-text">
+            <p>Easy Online Support</p>
+            <p>24/7 Any time support</p>
+          </div>
+        </div>
+      </div>
+    </section>    
+     <!-- ========== End Policy ========== -->
+
+     <!-- ========== Start Our Products Section ========== -->
+      <section class="section-products container">        
+          <h2 class="section-common--title">Checkout Kumar Store</h2>        
+        <section class="container">
+          <div id="productContainer"></div>
+        </section>
+      </section>
+     <!-- ========== Start Product Template Section ========== -->
+      <template id="productTemplate">
+        <div class="cards" id="cardValue">
+          <article class="information [card]">
+            <span class="category"></span>
+            <div class="imageContainer">
+              <img class="productImage" src="" alt="">
+            </div>
+            <h2 class="productName"></h2>
+            <div class="productRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="productDescription"></p>
+            <div class="productPriceElement">
+              <p class="productPrice"></p>
+              <p class="productActualPrice"></p>
+            </div>
+            <div class="productStockElement">
+              <p class="productProperty">Total Stocks Available:</p>
+              <p class="productStock"></p>
+            </div>
+            <div class="productQuantityElement">
+              <p class="productProperty">Quantity</p>
+              <div class="stockElement">
+                <button class="cartDecrement"><i class="fa-solid fa-minus"></i></button>
+                <p class="productQuantity">1</p>
+                <button class="cartIncrement"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+            <button class="add-to-cart-button"><i class="fa-solid fa-cart-shopping"></i>Add To Cart</button>
+          </article>
+        </div>
+      </template>
+     
+     <!-- ========== End Product Template Section ========== -->    
+
+     <!-- ========== End Our Products Section ========== -->
+     
+    <!-- ========== Start footer Section ========== -->
+    <footer class="section-footer">    
+      <script src="./src/footer.js"></script>
+    </footer>
+    <!-- ========== End footer Section ========== -->
+     
+    <script type="module" src="src/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init();
+</script>
+  </body>
+</html>
